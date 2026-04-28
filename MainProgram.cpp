@@ -112,5 +112,9 @@ int main() {
     const ConstDemo cd1(7);
     std::cout<<"const object value: "<<cd1.getValue()<<"\n";
     std::cout<<"const object doubled (no mutation): "<<cd1.constGetDouble()<<"\n";
+    
+    ConstDemo cd2(5);
+    cd2.doubleValue();
+    std::cout<<"non-const object after doubleValue(): "<<cd2.getValue()<<"\n";
     return 0;
 }
